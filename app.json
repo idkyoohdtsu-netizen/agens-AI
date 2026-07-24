@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "remcute",
+    "slug": "rem-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "remcute",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d0d0f"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.remcute.app"
+    },
+    "android": {
+      "package": "com.remcute.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#0d0d0f"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0518b57e-9e77-4c2e-82fd-1a0efd5ebc8e"
+      }
+    },
+    "owner": "remcutes-team"
+  }
+}
