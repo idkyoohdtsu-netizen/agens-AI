@@ -13,7 +13,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useColors } from '@/hooks/useColors';
 import { useSettings } from '@/context/SettingsContext';
 import { Feather } from '@expo/vector-icons';
-import { fetch } from 'expo/fetch';
 import * as Haptics from 'expo-haptics';
 import { router } from 'expo-router';
 
