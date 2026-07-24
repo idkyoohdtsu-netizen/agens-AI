@@ -17,13 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm install
 
       - name: Install EAS CLI
         run: npm install -g eas-cli
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Build APK via EAS
         run: eas build --platform android --profile preview --non-interactive --no-wait
@@ -32,6 +31,8 @@ jobs:
 
       - name: Print build link
         run: |
-          echo "✅ Build submitted to EAS!"
-          echo "📱 Track progress & download APK:"
-          echo "   https://expo.dev/accounts/remcutes-team/projects/rem-app/builds"
+          echo "========================================"
+          echo "  APK build submitted to EAS Cloud!"
+          echo "  Download link after build completes:"
+          echo "  https://expo.dev/accounts/remcutes-team/projects/rem-app/builds"
+          echo "========================================"
